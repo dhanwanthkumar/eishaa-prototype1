@@ -19,5 +19,5 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
     let video = slides[slideIndex - 1].querySelector('video');
     video.play(); // Play the video of the current slide
-    setTimeout(showSlides, 10000); // Change slide every 10 seconds
+    setTimeout(showSlides, 10100); // Change slide every 10 seconds
 }

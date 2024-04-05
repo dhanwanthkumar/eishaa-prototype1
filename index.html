@@ -4,129 +4,116 @@
 <!-- head section -->
 
 <head>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="nav&Foot.css">
+  <Script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+
+      loader.classList.add("loader--hidden");
+
+      loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+      });
+    });
+
+  </Script>
 </head>
 
 <!-- body section -->
 
 <body>
-  <div style="background-color: black;">
-    <div class="header">
-      <img src="database/LOGO.png" class="logo" style="max-width: 5%;">
-      <div class="header-right">
-        <a class="active" href="#home">Home</a>
-        <a href="#contact">Services</a>
-        <a href="#contact">Technology</a>
-        <a href="#contact">Products</a>
-        <a href="#about">About Us</a>
+  <div class="loader">
+    
+  </div>
+  <a href="index.html"><img src="database/LOGO.png" class="logo" style="max-width: 6%; position: fixed;z-index: 2;"></a>
+  <div class="navbar" style="display: flex;">
+    <div class="home">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="dropdown">
+      <a class="Services">Services</a>
+      <div class="dropdown-content">
+        <a href="innovation.html">Innovation & Technology Consulting</a>
+        <a href="R&D.html">Engineering and R & D</a>
+        <a href="Skill.html">Skill</a>
       </div>
     </div>
-
-    <!-- slideshow container for the vedio elements -->
-
-    <div class="slideshow-container" style="width: 100%;">
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/1gandaperunda-intro-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/2neural networks-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/3blockchain-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/4genitic algorithm-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/5human neural schema-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/6fauna-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/7flora-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/8defence-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/9satellite-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/10aerospace-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/11telecom-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/12healthcare-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/13manufacturing-10sec.mp4" type="video/mp4">
-      </div>
-
-      <div class="mySlides fade">
-        <video autoplay muted loop>
-          <source src="database/14education.mp4" type="video/mp4">
-      </div>
-      <br>
-
-      <!-- dot section to find the current slide -->
-
-      <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-      <script src="script.js"></script>
+    <div class="technology">
+      <a href="tech.html">Technology</a>
     </div>
-
-    <!-- capabilities  -->
-
-    <div class="mygif">
-      <video autoplay muted loop>
-        <source src="database/CAPABILITIES.mp4" type="video/mp4">
+    <div class="products">
+      <a href="insights.html">Products</a>
+    </div>
+    <div class="about">
+      <a href="about.html">About Us</a>
     </div>
   </div>
+
+  <!-- slideshow container for the vedio elements -->
+
+  <div class="slideshow-container" style="width: 100%; background-color: black;">
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/1gandaperunda.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/3defence-10sec.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/4aerospace-10sec.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/6healthcare-10sec.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/8education.mp4" type="video/mp4">
+    </div>
+
+    <!-- dot section to find the current slide -->
+
+    <div class="dot-bg" style="text-align:center;background-color: black;">
+      <div class="dot-cont">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </div>
+
+  <!-- capabilities  -->
+  <div class="mygif" style="background:none ;border:none;">
+    <video autoplay muted loop>
+      <source src="database/CAPABILITIES.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!--===============news and Events=========================-->
+  <div class="partner">
+    <img src="images/Partners logos.png" alt="company logo">
+  </div>
+
+  <!-- Footer -->
+  <footer class="Foot">
+    <p>Terms And Conditions</p>
+    <p>Privacy policy</p>
+    <p>Contact Us : <a href="mailto:info@eishaa.com">info@eishaa.com</a></p>
+  </footer>
+  <!-- Footer -->
+  <!-- Copyright -->
+  <div class="Copyright">Copyright ©️ 2021 Eishaa Communications Systems Private Limited. All Rights Reserved.</div>
+  <!-- Copyright -->
 
 
 </body>
